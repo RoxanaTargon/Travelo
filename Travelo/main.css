@@ -1,0 +1,401 @@
+@import url("https://fonts.googleapis.com/css?family=Nothing+You+Could+Do|Rubik:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Nothing+You+Could+Do|Rubik:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap");
+
+.travel-img {
+    background-image: url("images/indonesia.jpg");
+    background-size: 100vw 100vh;
+	box-shadow: inset 0 0 0 1000px rgba(0,0,0,.3);
+	height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.left, .right{
+    display: flex;
+    align-items: center;
+    background-color: rgba(138, 138, 138, 0.3);
+    height: 120px;
+    width: 50px;
+    justify-content: center;
+    font-size: 20px;
+    transition: .3s;
+    cursor: pointer;
+}
+#left, #right {
+    color: white;
+}
+.left:hover {
+    background-color: white;
+}
+.left:hover #left {
+    color: black;
+}
+.right:hover {
+    background-color: white;
+}
+.right:hover #right {
+    color: black;
+}
+.descr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.descr h3 {
+    color: white;
+    text-align: center;
+    font-size: 150px;
+    font-family: "Nothing You Could Do", cursive;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+.descr p {
+    margin-bottom: 50px;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+.explore {
+    color: white;
+    text-align: center;
+    font-size: 17px;
+    background-color: #1dd3b0;
+    height: 60px;
+    width: 200px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+    font-weight: 600;
+    cursor: pointer;
+}
+.explore:hover {
+    background-color: #FF4A52;
+}
+.want {
+    background-color: #040E27;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.want p {
+    color: white;
+    margin-right: 30px;
+    font-size: 25px;
+}
+.want-search {
+    color: white;
+    background-color: #FF4A52; 
+    height: 45px;
+    width: 120px;
+    font-weight: 600;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    transition: 0.5s;
+}
+.want-search:hover {
+    background-color: #1dd3b0;
+}
+.want input {
+    margin-left: 10px;
+    height: 45px;
+    width: 220px;
+    border-radius: 5px;
+    background-color: #040E27;
+    color: #AAB1B7;
+    border: 0.1px solid #AAB1B7;
+    padding-left: 15px;
+    font-size: 15px;
+}
+
+
+.country {
+    height: 120vh;
+    margin: 130px 200px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 150px repeat(3, 250px);
+    gap: 35px;
+    margin-bottom: 45px;
+}
+.des {
+    grid-column: 1 / 4;
+    width: 470px;
+    margin-left: 320px;
+    text-align: center;
+}
+.des h3 {
+    font: 40px Rubix, sans-serif;
+    margin-bottom: 20px;
+}
+.des p {
+    color: #7A838B;
+    line-height: 28px;
+    font-weight: 500;
+}
+.coun {
+    line-height: 28px;
+    border-radius: 5px;
+    transition: 0.4s;
+    background-color: rgba(0, 0, 0, 0.2);  
+}
+.plc {
+    display: flex;
+    flex-direction:  row;
+    margin-left: 30px;
+    margin-top: 192px;
+}
+.plc p {
+    font-size: 24px;
+    color: whitesmoke;
+    margin-right: 15px;
+    transition: 0.35s;
+    font-weight: 500;
+}
+.plc button {
+    background-color: #1EC6B6;
+    border: 0;
+    padding: 0 12px;
+    border-radius: 14px;
+    color: whitesmoke;
+    transition: 0.35s;
+    font-weight: 550;
+    cursor: pointer;
+}
+.coun:hover p {
+    color: #FF4A52;
+}
+.coun:hover button {
+    background-color: #FF4A52;
+}
+.coun:hover {
+    margin-bottom: 10px;
+    margin-top: -10px;
+}
+#country-1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4),
+                     rgba(0, 0, 0, 0.4)),
+                      url("images/italy1.jpg");
+    background-size: 23vw 36vh; 
+}
+#country-2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4),
+                    rgba(0, 0, 0, 0.4)),
+                      url("images/brazil1.jpg"); 
+    background-size: 23vw 36vh;
+}
+#country-3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4),
+                    rgba(0, 0, 0, 0.4)), 
+                      url("images/america1.jpg");
+    background-size: 23vw 36vh; 
+}
+#country-4 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4),
+                    rgba(0, 0, 0, 0.4)), 
+                    url("images/nepal1.jpg"); 
+    background-size: 23vw 36vh;
+}
+#country-5 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4),
+                    rgba(0, 0, 0, 0.4)), 
+                    url("images/maldives1.jpg");
+    background-size: 23vw 36vh; 
+}
+#country-6 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4),
+                    rgba(0, 0, 0, 0.4)), 
+                    url("images/indonesia4.jpg"); 
+    background-size: 23vw 36vh;
+}
+
+
+
+
+
+.subs {
+    background-color: #040E27;
+    height: 210px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.subs-des {
+    width: 320px;
+    margin-right: 50px;
+}
+.subs h1 {
+    font-size: 24px;
+    margin-bottom: 11px;
+    color: whitesmoke;
+}
+.subs p {
+    line-height: 28px;
+    color: #AAB1B7;
+}
+.subs input {
+    height: 50px;
+    width: 390px;
+    border: 0;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 16px;
+}
+.subs button {
+    height: 50px;
+    width: 140px;
+    margin-left: 10px;
+    border: 0;
+    font-weight: 600;
+    border-radius: 5px;
+    background-color: #FF4A52;
+    color: whitesmoke;
+    font-size: 18px;
+}
+.subs button:hover {
+    background-color: #1dd3b0;
+}
+
+.book-main {
+    border-radius: 5px;
+}
+
+.book {
+    margin: 130px 200px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 150px repeat(2, 350px) 150px;
+    gap: 35px;
+    margin-bottom: 45px;
+    transition: 0.5s;
+}
+.book-foto {
+    height: 210px;
+}
+.book-des {
+    height: 140px;
+    display: flex;
+    flex-direction: row;
+}
+.book-foto button {
+    background-color: #1dd3b0;
+    color: whitesmoke;
+    border: 0;
+    height: 36px;
+    width: 75px;
+    border-radius: 18px;
+    font-size: 18px;
+    margin: 17px;
+    cursor: pointer;
+}
+.book-tit {
+    width: 220px;
+    margin: 20px;
+}
+.book-time {
+    width: 90px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 90px;
+    cursor: pointer;
+}
+.book-des h1 {
+    font-size: 22px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+.book-des p {
+    font-size: 14px;
+    margin-bottom: 19px;
+    color: #7A838B;;
+}
+#star {
+    font-size: 10px;
+    color: #FDAE5C;
+    margin-top: 4px;
+}
+#star1 {
+    font-size: 10px;
+    color: #FDAE5C;
+    margin-top: 4px;
+    margin-right: 5px;
+}
+.star {
+    display: flex;
+    flex-direction: row;
+}
+.star p {
+    cursor: pointer;
+}
+#clock {
+    color: #7A838B;
+    margin-right: 10px;
+}
+#book-foto1 {
+    background-image: url("images/california.jpg");
+    background-size: 23vw 36vh; 
+    border-radius: 5px 5px 0 0;
+}
+#book-foto2 {
+    background-image: url("images/korcula.jpg");
+    border-radius: 5px 5px 0 0;
+    background-size: 23vw 36vh; 
+}
+#book-foto3 {
+    background-image: url("images/london.jpg");
+    border-radius: 5px 5px 0 0;
+    background-size: 23vw 36vh; 
+}
+#book-foto4 {
+    background-image: url("images/miami.jpg");
+    background-size: 23vw 36vh; 
+    border-radius: 5px 5px 0 0;
+}
+#book-foto5 {
+    background-image: url("images/york.jpg");
+    background-size: 23vw 36vh; 
+    border-radius: 5px 5px 0 0;
+}
+#book-foto6 {
+    background-image: url("images/Iceland.jpg");
+    background-size: 23vw 36vh; 
+    border-radius: 5px 5px 0 0;
+}
+.book-button {
+    grid-column: 1 / 4;
+    width: 470px;
+    margin-left: 320px;
+    text-align: center;
+}
+.book-button button {
+    margin: 50px;
+    border: 0;
+    background-color: #FF4A52;
+    color: whitesmoke;
+    height: 50px;
+    width: 170px;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.book-button button:hover {
+    background-color: #1dd3b0;
+}
+.book-main:hover .dol {
+    background-color: #FF4A52;
+}
+.book-main:hover .book-tit h1 {
+    color: #FF4A52;
+}
+.book-main:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}

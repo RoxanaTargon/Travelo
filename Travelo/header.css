@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css?family=Nothing+You+Could+Do|Rubik:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Nothing+You+Could+Do|Rubik:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "Rubix", sans-serif;
+    color: #040E27;;
+    transition: 0.2s;
+}
+body {
+    height: 1000px;
+}
+header {
+    height: 100px;
+    display: grid;
+    grid-template-columns: 215px 1fr 185px 195px 100px;
+}
+
+/*logo*/
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+}
+
+/*info*/
+.info {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+.info-ul {
+    display: flex;
+    flex-direction: row;
+    margin-right: 120px;
+}
+.info-li {
+    margin: 0 35px 0 0;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+#under {
+    font-size: 11px;
+    padding: 0;
+}
+.info-hov {
+    transition: 0.2s;
+}
+.info-hov:hover {
+    color: #1dd3b0;
+    font-weight: 500;
+}
+.menu {
+    position: absolute;
+    background-color: white;
+    height: 82px;
+    width: 200px;
+    margin-top: 17px;
+    opacity: 0;
+    transition: 0.6s;
+}
+.menu li {
+    height: 41px;
+    display: flex;
+    align-items: center;
+    padding-left: 14px;
+    font-weight: 400;
+    font-size: 14px;
+}
+#main-menu:hover .menu {
+    opacity: 1;
+    animation: slideInDown;
+    animation-duration: 1s;
+}
+
+/*icon*/
+.icons-4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+#icon-i {
+    font-size: 16px;
+    cursor: pointer;
+    color: rgb(173, 178, 180);
+}
+#icon-i:hover {
+    color: #FF4A52;
+}
+
+/*tel*/
+#tel-i {
+    font-size: 12px;
+    padding-right: 7px;
+    padding-left: 20px;
+    color: #FF4A52;
+}
+.tel-number {
+    font-size: 16px;
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    padding-right: 0;
+}
+.tel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/*search*/
+.search {
+    background-color: #FF4A52;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+#search-icon {
+    height: 20px;
+    color: white;
+}
